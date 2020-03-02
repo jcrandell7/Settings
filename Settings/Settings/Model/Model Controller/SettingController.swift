@@ -12,7 +12,7 @@ class SettingsController {
     
     //MARK - Source of Truth
     //method signature
-    //dclared a constant of type array of Settings. it will do some work and then return an array then initialize some settings
+    //declared a constant of type array of Settings. it will do some work and then return an array then initialize some settings
     let settings: [Setting] = {
         let music = Setting (settingTitle: "Music", icon: #imageLiteral(resourceName: "iTunes"), isOn: false)
         let appStore = Setting(settingTitle: "App Store", icon: #imageLiteral(resourceName: "appStore"), isOn: false)
@@ -23,7 +23,7 @@ class SettingsController {
     //MARK: - Methods
     // a method signature is an empty function.
     func toggleIsOn(for setting: Setting) {
-        
-        
+        setting.isOn = !setting.isOn
+        // 2b|| !2b
     }
 }

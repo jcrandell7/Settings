@@ -13,7 +13,7 @@
             - isOn: the 'Bool' to designate whether the Setting is on or not
  */
 
-
+//make sure to import UIKit when you declare stuff of type UIImage
 import UIKit
 class Setting {
     
