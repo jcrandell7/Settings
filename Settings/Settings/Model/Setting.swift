@@ -10,7 +10,7 @@
     - properties:
             - name: The 'String' identifier for the setting
             - icon: the 'UIIMage' that matches the setting
-            - isOn: the 'Bool' to designate whether the Setting is on or not
+            - isOn: the 'Bool' to designated whether the Setting is on or not
  */
 
 //make sure to import UIKit when you declare stuff of type UIImage

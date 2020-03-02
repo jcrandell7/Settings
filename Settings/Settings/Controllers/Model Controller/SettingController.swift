@@ -22,7 +22,7 @@ class SettingController {
     }()
     //MARK: - Methods
     // a method signature is an empty function.
-    func toggleIsOn(for setting: Setting) {
+    static func toggleIsOn(for setting: Setting) {
         setting.isOn = !setting.isOn
         // 2b|| !2b
     }
