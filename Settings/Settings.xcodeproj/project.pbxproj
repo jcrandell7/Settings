@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18DD624B240D7C9C00AA928A /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD624A240D7C9C00AA928A /* Setting.swift */; };
+		18DD6250240D7EFC00AA928A /* SettingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DD624F240D7EFC00AA928A /* SettingController.swift */; };
 		FB160A7023F756B80092DB05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB160A6F23F756B80092DB05 /* AppDelegate.swift */; };
 		FB160A7223F756B80092DB05 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB160A7123F756B80092DB05 /* SceneDelegate.swift */; };
 		FB160A7423F756B80092DB05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB160A7323F756B80092DB05 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18DD624A240D7C9C00AA928A /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		18DD624F240D7EFC00AA928A /* SettingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingController.swift; sourceTree = "<group>"; };
 		FB160A6C23F756B80092DB05 /* Settings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Settings.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB160A6F23F756B80092DB05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB160A7123F756B80092DB05 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18DD6249240D7C7800AA928A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18DD624A240D7C9C00AA928A /* Setting.swift */,
+				18DD6251240D7F1900AA928A /* Model Controller */,
+				18DD624C240D7D8F00AA928A /* Resources */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		18DD624C240D7D8F00AA928A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18DD624D240D7E2E00AA928A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		18DD624E240D7E3500AA928A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB160A7323F756B80092DB05 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		18DD6251240D7F1900AA928A /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18DD624F240D7EFC00AA928A /* SettingController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
 		FB160A6323F756B80092DB05 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +100,12 @@
 		FB160A6E23F756B80092DB05 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				FB160A7523F756B80092DB05 /* Main.storyboard */,
+				18DD6249240D7C7800AA928A /* Model */,
+				18DD624D240D7E2E00AA928A /* Views */,
+				18DD624E240D7E3500AA928A /* Controllers */,
 				FB160A6F23F756B80092DB05 /* AppDelegate.swift */,
 				FB160A7123F756B80092DB05 /* SceneDelegate.swift */,
-				FB160A7323F756B80092DB05 /* ViewController.swift */,
-				FB160A7523F756B80092DB05 /* Main.storyboard */,
 				FB160A7823F756B90092DB05 /* Assets.xcassets */,
 				FB160A7A23F756B90092DB05 /* LaunchScreen.storyboard */,
 				FB160A7D23F756B90092DB05 /* Info.plist */,
@@ -138,8 +184,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18DD6250240D7EFC00AA928A /* SettingController.swift in Sources */,
 				FB160A7423F756B80092DB05 /* ViewController.swift in Sources */,
 				FB160A7023F756B80092DB05 /* AppDelegate.swift in Sources */,
+				18DD624B240D7C9C00AA928A /* Setting.swift in Sources */,
 				FB160A7223F756B80092DB05 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,7 +334,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
-				INFOPLIST_FILE = Settings/Info.plist;
+				INFOPLIST_FILE = Settings/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +352,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4J7B9732LY;
-				INFOPLIST_FILE = Settings/Info.plist;
+				INFOPLIST_FILE = Settings/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
