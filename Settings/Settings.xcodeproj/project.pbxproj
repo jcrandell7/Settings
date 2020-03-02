@@ -45,24 +45,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		181FD71F240D8FC60069C89C /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				FB160A7323F756B80092DB05 /* ViewController.swift */,
-				181FD720240D8FCD0069C89C /* Custom Views */,
-			);
-			path = "View Controllers";
-			sourceTree = "<group>";
-		};
-		181FD720240D8FCD0069C89C /* Custom Views */ = {
-			isa = PBXGroup;
-			children = (
-				181FD721240D907A0069C89C /* settingListTableViewController.swift */,
-				181FD71D240D8FB90069C89C /* SettingTableViewCell.swift */,
-			);
-			path = "Custom Views";
-			sourceTree = "<group>";
-		};
 		18DD6249240D7C7800AA928A /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,7 +70,8 @@
 		18DD624D240D7E2E00AA928A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				181FD71F240D8FC60069C89C /* View Controllers */,
+				FB160A7323F756B80092DB05 /* ViewController.swift */,
+				181FD71D240D8FB90069C89C /* SettingTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -96,17 +79,10 @@
 		18DD624E240D7E3500AA928A /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				18DD6251240D7F1900AA928A /* Model Controller */,
+				18DD624F240D7EFC00AA928A /* SettingController.swift */,
+				181FD721240D907A0069C89C /* settingListTableViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		18DD6251240D7F1900AA928A /* Model Controller */ = {
-			isa = PBXGroup;
-			children = (
-				18DD624F240D7EFC00AA928A /* SettingController.swift */,
-			);
-			path = "Model Controller";
 			sourceTree = "<group>";
 		};
 		FB160A6323F756B80092DB05 = {
