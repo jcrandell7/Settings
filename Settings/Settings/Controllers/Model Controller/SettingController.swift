@@ -8,12 +8,12 @@
 
 import Foundation
 
-class SettingsController {
+class SettingController {
     
     //MARK - Source of Truth
     //method signature
     //declared a constant of type array of Settings. it will do some work and then return an array then initialize some settings
-    let settings: [Setting] = {
+   static let settings: [Setting] = {
         let music = Setting (settingTitle: "Music", icon: #imageLiteral(resourceName: "iTunes"), isOn: false)
         let appStore = Setting(settingTitle: "App Store", icon: #imageLiteral(resourceName: "appStore"), isOn: false)
         let iBooks = Setting(settingTitle: "iBooks", icon: #imageLiteral(resourceName: "iBooks"), isOn: false)

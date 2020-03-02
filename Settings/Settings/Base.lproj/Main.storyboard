@@ -6,16 +6,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Setting List Table View Controller-->
         <scene sceneID="sXa-dh-scY">
             <objects>
-                <tableViewController id="lsc-gq-Pio" sceneMemberID="viewController">
+                <tableViewController id="lsc-gq-Pio" customClass="settingListTableViewController" customModule="Settings" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8YY-6p-BXa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="174" id="LEQ-Km-xfd">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="settingCell" rowHeight="174" id="LEQ-Km-xfd" customClass="SettingTableViewCell" customModule="Settings" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="174"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LEQ-Km-xfd" id="uNl-nX-2Kt">
@@ -29,17 +29,20 @@
                                                 <constraint firstAttribute="width" secondItem="AkA-m0-9Wt" secondAttribute="height" multiplier="1:1" id="RP7-5K-HoB"/>
                                             </constraints>
                                         </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="123" translatesAutoresizingMaskIntoConstraints="NO" id="MBG-UF-B8O">
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MBG-UF-B8O">
                                             <rect key="frame" x="60" y="71.5" width="346" height="31"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsY-2s-gbu">
-                                                    <rect key="frame" x="0.0" y="0.0" width="174" height="31"/>
+                                                    <rect key="frame" x="0.0" y="5.5" width="289" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RXs-T0-QBi">
                                                     <rect key="frame" x="297" y="0.0" width="51" height="31"/>
+                                                    <connections>
+                                                        <action selector="settingSwitchToggled:" destination="LEQ-Km-xfd" eventType="valueChanged" id="SDx-Ew-blb"/>
+                                                    </connections>
                                                 </switch>
                                             </subviews>
                                         </stackView>
@@ -52,6 +55,11 @@
                                         <constraint firstItem="MBG-UF-B8O" firstAttribute="centerY" secondItem="uNl-nX-2Kt" secondAttribute="centerY" id="ujU-QV-vBB"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="settingIconImageView" destination="AkA-m0-9Wt" id="g6z-1e-Lbq"/>
+                                    <outlet property="settingNameLabel" destination="NsY-2s-gbu" id="Otc-qv-uFJ"/>
+                                    <outlet property="settingSwitchToggled" destination="RXs-T0-QBi" id="c71-fJ-syM"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
